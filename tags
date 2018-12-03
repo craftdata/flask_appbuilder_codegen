@@ -1,0 +1,113 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ArgSpec	codegen.py	/^from inspect import ArgSpec$/;"	i
+Boolean	codegen.py	/^from sqlalchemy.types import Boolean, String$/;"	i
+CheckConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+CodeGenerator	codegen.py	/^class CodeGenerator(object):$/;"	c
+CodeGenerator	main.py	/^from sqlacodegen.codegen import CodeGenerator$/;"	i
+Enum	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+ForeignKey	codegen.py	/^from sqlalchemy.schema import ForeignKey$/;"	i
+ForeignKeyConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+ImportCollector	codegen.py	/^class ImportCollector(OrderedDict):$/;"	c
+LTREE	dialects/postgresql.py	/^class LTREE(sqltypes.TypeEngine):$/;"	c
+LiteralCompiler	codegen.py	/^    class LiteralCompiler(compiler.__class__):$/;"	c	function:_get_compiled_expression
+ManyToManyRelationship	codegen.py	/^class ManyToManyRelationship(Relationship):$/;"	c
+ManyToOneRelationship	codegen.py	/^class ManyToOneRelationship(Relationship):$/;"	c
+MetaData	main.py	/^from sqlalchemy.schema import MetaData$/;"	i
+Model	codegen.py	/^class Model(object):$/;"	c
+ModelClass	codegen.py	/^class ModelClass(Model):$/;"	c
+ModelTable	codegen.py	/^class ModelTable(Model):$/;"	c
+OrderedDict	codegen.py	/^from sqlalchemy.util import OrderedDict$/;"	i
+PGTypeCompiler	dialects/postgresql.py	/^from sqlalchemy.dialects.postgresql.base import ischema_names, PGTypeCompiler$/;"	i
+POINT	dialects/postgresql.py	/^class POINT(sqltypes.TypeEngine):$/;"	c
+PrimaryKeyConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+Relationship	codegen.py	/^class Relationship(object):$/;"	c
+String	codegen.py	/^from sqlalchemy.types import Boolean, String$/;"	i
+Table	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+TextClause	codegen.py	/^    from sqlalchemy.sql.expression import text, TextClause$/;"	i
+TextClause	codegen.py	/^    from sqlalchemy.sql.expression import text, _TextClause as TextClause$/;"	i
+UniqueConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+_DummyInflectEngine	codegen.py	/^class _DummyInflectEngine(object):$/;"	c
+__init__	codegen.py	/^    def __init__(self, metadata, noindexes=False, noconstraints=False,$/;"	m	class:CodeGenerator
+__init__	codegen.py	/^    def __init__(self, source_cls, target_cls):$/;"	m	class:Relationship
+__init__	codegen.py	/^    def __init__(self, source_cls, target_cls, assocation_table, inflect_engine):$/;"	m	class:ManyToManyRelationship
+__init__	codegen.py	/^    def __init__(self, source_cls, target_cls, constraint, inflect_engine):$/;"	m	class:ManyToOneRelationship
+__init__	codegen.py	/^    def __init__(self, table):$/;"	m	class:Model
+__init__	codegen.py	/^    def __init__(self, table, association_tables, inflect_engine, detect_joined):$/;"	m	class:ModelClass
+__visit_name__	dialects/postgresql.py	/^    __visit_name__ = 'LTREE'$/;"	v	class:LTREE
+__visit_name__	dialects/postgresql.py	/^    __visit_name__ = 'POINT'$/;"	v	class:POINT
+_add_attribute	codegen.py	/^    def _add_attribute(self, attrname, value):$/;"	m	class:ModelClass
+_convert_to_valid_identifier	codegen.py	/^def _convert_to_valid_identifier(name):$/;"	f
+_flask_prepend	codegen.py	/^_flask_prepend = ' '$/;"	v
+_get_column_names	codegen.py	/^def _get_column_names(constraint):$/;"	f
+_get_common_fk_constraints	codegen.py	/^def _get_common_fk_constraints(table1, table2):$/;"	f
+_get_compiled_expression	codegen.py	/^def _get_compiled_expression(statement):$/;"	f
+_get_constraint_sort_key	codegen.py	/^def _get_constraint_sort_key(constraint):$/;"	f
+_getargspec_init	codegen.py	/^def _getargspec_init(method):$/;"	f
+_is_model_descendant	codegen.py	/^def _is_model_descendant(model_a, model_b):$/;"	f
+_re_all_cap	codegen.py	/^_re_all_cap = re.compile('([a-z0-9])([A-Z])')$/;"	v
+_re_boolean_check_constraint	codegen.py	/^_re_boolean_check_constraint = re.compile(r"(?:(?:.*?)\\.)?(.*?) IN \\(0, 1\\)")$/;"	v
+_re_column_name	codegen.py	/^_re_column_name = re.compile(r'(?:(["`]?)(?:.*)\\1\\.)?(["`]?)(.*)\\2')$/;"	v
+_re_enum_check_constraint	codegen.py	/^_re_enum_check_constraint = re.compile(r"(?:(?:.*?)\\.)?(.*?) IN \\((.+)\\)")$/;"	v
+_re_enum_item	codegen.py	/^_re_enum_item = re.compile(r"'(.*?)(?<!\\\\)'")$/;"	v
+_re_first_cap	codegen.py	/^_re_first_cap = re.compile('(.)([A-Z][a-z]+)')$/;"	v
+_re_invalid_identifier	codegen.py	/^_re_invalid_identifier = re.compile(r'[^a-zA-Z0-9_]' if sys.version_info[0] < 3 else r'(?u)\\W')$/;"	v
+_render_column	codegen.py	/^def _render_column(column, show_name):$/;"	f
+_render_column_type	codegen.py	/^def _render_column_type(coltype):$/;"	f
+_render_constraint	codegen.py	/^def _render_constraint(constraint):$/;"	f
+_render_index	codegen.py	/^def _render_index(index):$/;"	f
+_tablename_to_classname	codegen.py	/^    def _tablename_to_classname(tablename, inflect_engine):$/;"	m	class:ModelClass
+_underscore	codegen.py	/^def _underscore(name):$/;"	f
+absolute_import	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+absolute_import	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+add_import	codegen.py	/^    def add_import(self, obj):$/;"	m	class:ImportCollector
+add_imports	codegen.py	/^    def add_imports(self, collector):$/;"	m	class:Model
+add_imports	codegen.py	/^    def add_imports(self, collector):$/;"	m	class:ModelClass
+add_imports	codegen.py	/^    def add_imports(self, collector):$/;"	m	class:ModelTable
+add_literal_import	codegen.py	/^    def add_literal_import(self, pkgname, name):$/;"	m	class:ImportCollector
+argparse	main.py	/^import argparse$/;"	i
+codecs	main.py	/^import codecs$/;"	i
+create_engine	main.py	/^from sqlalchemy.engine import create_engine$/;"	i
+defaultdict	codegen.py	/^from collections import defaultdict$/;"	i
+dialects	main.py	/^import sqlacodegen.dialects$/;"	i
+division	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+division	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+footer	codegen.py	/^    footer = ''$/;"	v	class:CodeGenerator
+geoalchemy2	dialects/postgresql.py	/^    import geoalchemy2$/;"	i
+import_dialect_specificities	main.py	/^def import_dialect_specificities(engine):$/;"	f
+importlib	main.py	/^import importlib$/;"	i
+inflect	codegen.py	/^            import inflect$/;"	i
+inflect	codegen.py	/^        import inflect$/;"	i
+inspect	codegen.py	/^import inspect$/;"	i
+ischema_names	dialects/postgresql.py	/^from sqlalchemy.dialects.postgresql.base import ischema_names, PGTypeCompiler$/;"	i
+iskeyword	codegen.py	/^from keyword import iskeyword$/;"	i
+main	main.py	/^def main():$/;"	f
+make_backref	codegen.py	/^    def make_backref(self, relationships, classes):$/;"	m	class:Relationship
+parent_name	codegen.py	/^    parent_name = 'Base'$/;"	v	class:ModelClass
+plural_noun	codegen.py	/^    def plural_noun(self, noun):  # needed for backrefs$/;"	m	class:_DummyInflectEngine
+print_function	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+print_function	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+random	codegen.py	/^import re, random$/;"	i
+re	codegen.py	/^import re, random$/;"	i
+render	codegen.py	/^    def render(self):$/;"	m	class:ImportCollector
+render	codegen.py	/^    def render(self):$/;"	m	class:ModelClass
+render	codegen.py	/^    def render(self):$/;"	m	class:ModelTable
+render	codegen.py	/^    def render(self):$/;"	m	class:Relationship
+render	codegen.py	/^    def render(self, outfile=sys.stdout):$/;"	m	class:CodeGenerator
+render_fk_options	codegen.py	/^    def render_fk_options(*opts):$/;"	f	function:_render_constraint
+singular_noun	codegen.py	/^    def singular_noun(self, noun):$/;"	m	class:_DummyInflectEngine
+sqlacodegen	main.py	/^import sqlacodegen$/;"	i
+sqlacodegen	main.py	/^import sqlacodegen.dialects$/;"	i
+sqlalchemy	codegen.py	/^import sqlalchemy$/;"	i
+sqltypes	dialects/postgresql.py	/^from sqlalchemy import types as sqltypes$/;"	i
+sys	codegen.py	/^import sys$/;"	i
+sys	main.py	/^import sys$/;"	i
+text	codegen.py	/^    from sqlalchemy.sql.expression import text, TextClause$/;"	i
+text	codegen.py	/^    from sqlalchemy.sql.expression import text, _TextClause as TextClause$/;"	i
+unicode_literals	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+unicode_literals	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+visit_bindparam	codegen.py	/^        def visit_bindparam(self, bindparam, within_columns_clause=False, literal_binds=False, **kwargs):$/;"	m	class:_get_compiled_expression.LiteralCompiler
