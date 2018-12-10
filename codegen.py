@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# File              : codegen.py
+# Date              : 10.12.2018
+# Last Modified Date: 10.12.2018
+# -*- coding: utf-8 -*-
+# File              : codegen.py
+# Date              : 10.12.2018
+# Last Modified Date: 10.12.2018
 """Contains the code generation logic and helper functions."""
 from __future__ import unicode_literals, division, print_function, absolute_import
 from collections import defaultdict
@@ -49,7 +58,7 @@ from flask import Markup, url_for
 from sqlalchemy import ( BigInteger, Boolean, Column, Date, DateTime,
                 ForeignKey, ForeignKeyConstraint, Index, Integer, LargeBinary,
                 Numeric, String, Table, Text, Time, text, func, event, DDL)
-                
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.event import listens_for
 
@@ -116,12 +125,12 @@ photo_hdr = """
     file = Column(FileColumn, nullable=False)
 
     # mindate = datetime.date(MINYEAR, 1, 1)
-    
+
     # def __repr__(self):
     #     return self.name
-    
-    
-    
+
+
+
     def view_name(self):
         return self.__class__.__name__ +'View'
 
@@ -185,7 +194,7 @@ photo_hdr = """
     def year(self):
         date = self.created_on #or self.mindate
         return datetime.datetime(date.year, 1, 1)
-        
+
     # custom = Column(Integer(20))
     #
     # @renders('custom')
@@ -534,6 +543,7 @@ class ModelClass(Model):
     def render(self):
         text = 'class {0}({1}):\n'.format(self.name, self.parent_name)
         text += '    __versioned__ = {}\n'
+        text += '    __searchable__ = ["title", "content"]\n'
         text += '    __tablename__ = {0!r}\n'.format(self.table.name)
 
         # Render constraints and indexes as __table_args__
@@ -580,7 +590,7 @@ class ModelClass(Model):
         # Render subclasses
         for child_class in self.children:
             text += '\n\n' + child_class.render()
-        
+
         text += photo_hdr.rstrip('\n')
         return text +'#ENDMODEL'
 
@@ -614,7 +624,7 @@ class Relationship(object):
         while (self.target_cls, backref) in [(x.target_cls, x.backref_name) for x in relationships]:
             suffix = random.randint(1,1000) # Reduce the chance of a collision
             backref = original_backref + str('_{0}'.format(suffix))
-            
+
 
         self.kwargs['backref'] = repr(backref)
         # Check if any of the target_cls inherit from other target_cls

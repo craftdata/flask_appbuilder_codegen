@@ -4,33 +4,64 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+ActivityMixin	mixins.py	/^class ActivityMixin(object):$/;"	c
+AllFeaturesMixin	mixins.py	/^from sqlalchemy_mixins import AllFeaturesMixin$/;"	i
 ArgSpec	codegen.py	/^from inspect import ArgSpec$/;"	i
+AuditMixin	mixins.py	/^from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn$/;"	i
+AuditMixinNullable	mixins.py	/^class AuditMixinNullable(AuditMixin):$/;"	c
+BaseQuery	mixins.py	/^from flask.ext.sqlalchemy import  BaseQuery #SQLAlchemy,$/;"	i
+BiometricMixin	mixins.py	/^class BiometricMixin(object):$/;"	c
 Boolean	codegen.py	/^from sqlalchemy.types import Boolean, String$/;"	i
 CheckConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
 CodeGenerator	codegen.py	/^class CodeGenerator(object):$/;"	c
 CodeGenerator	main.py	/^from sqlacodegen.codegen import CodeGenerator$/;"	i
+ContactMixin	mixins.py	/^class ContactMixin(object):$/;"	c
+DocMixin	mixins.py	/^class DocMixin(object):$/;"	c
+DocQuery	mixins.py	/^class DocQuery(BaseQuery, SearchQueryMixin):$/;"	c
+EmploymentMixin	mixins.py	/^class EmploymentMixin(object):$/;"	c
 Enum	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+FileColumn	mixins.py	/^from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn$/;"	i
 ForeignKey	codegen.py	/^from sqlalchemy.schema import ForeignKey$/;"	i
 ForeignKeyConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+IMX	mixins.py	/^class IMX(object):$/;"	c
+ImageColumn	mixins.py	/^from flask_appbuilder.models.mixins import AuditMixin, FileColumn, ImageColumn$/;"	i
 ImportCollector	codegen.py	/^class ImportCollector(OrderedDict):$/;"	c
 LTREE	dialects/postgresql.py	/^class LTREE(sqltypes.TypeEngine):$/;"	c
 LiteralCompiler	codegen.py	/^    class LiteralCompiler(compiler.__class__):$/;"	c	function:_get_compiled_expression
+LowerCaseString	mixins.py	/^class LowerCaseString(types.TypeDecorator):$/;"	c
+MINYEAR	mixins.py	/^from datetime import MINYEAR, date, datetime, timedelta$/;"	i
 ManyToManyRelationship	codegen.py	/^class ManyToManyRelationship(Relationship):$/;"	c
 ManyToOneRelationship	codegen.py	/^class ManyToOneRelationship(Relationship):$/;"	c
+Markup	mixins.py	/^from flask import Markup, escape, url_for$/;"	i
 MetaData	main.py	/^from sqlalchemy.schema import MetaData$/;"	i
 Model	codegen.py	/^class Model(object):$/;"	c
 ModelClass	codegen.py	/^class ModelClass(Model):$/;"	c
 ModelTable	codegen.py	/^class ModelTable(Model):$/;"	c
+NameMixin	mixins.py	/^class NameMixin(object):$/;"	c
 OrderedDict	codegen.py	/^from sqlalchemy.util import OrderedDict$/;"	i
 PGTypeCompiler	dialects/postgresql.py	/^from sqlalchemy.dialects.postgresql.base import ischema_names, PGTypeCompiler$/;"	i
 POINT	dialects/postgresql.py	/^class POINT(sqltypes.TypeEngine):$/;"	c
+PRNMixin	mixins.py	/^class PRNMixin(object):$/;"	c
+ParentageMixin	mixins.py	/^class ParentageMixin(object):$/;"	c
+PersonDocMixin	mixins.py	/^class PersonDocMixin(object):$/;"	c
+PersonMedicalMixin	mixins.py	/^class PersonMedicalMixin(object):$/;"	c
+PersonMixin	mixins.py	/^class PersonMixin(object):$/;"	c
+PlaceMixin	mixins.py	/^class PlaceMixin(object):$/;"	c
 PrimaryKeyConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+RefTypeMixin	mixins.py	/^class RefTypeMixin(object):$/;"	c
 Relationship	codegen.py	/^class Relationship(object):$/;"	c
+SQLAlchemy	mixins.py	/^from flask.ext.sqlalchemy import  BaseQuery #SQLAlchemy,$/;"	i
+SearchQueryMixin	mixins.py	/^from sqlalchemy_searchable import SearchQueryMixin$/;"	i
 String	codegen.py	/^from sqlalchemy.types import Boolean, String$/;"	i
+TSVectorType	mixins.py	/^from sqlalchemy_utils.types import TSVectorType$/;"	i
 Table	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
 TextClause	codegen.py	/^    from sqlalchemy.sql.expression import text, TextClause$/;"	i
 TextClause	codegen.py	/^    from sqlalchemy.sql.expression import text, _TextClause as TextClause$/;"	i
+TitleCaseString	mixins.py	/^class TitleCaseString(types.TypeDecorator):$/;"	c
 UniqueConstraint	codegen.py	/^from sqlalchemy import (Enum, ForeignKeyConstraint, PrimaryKeyConstraint, CheckConstraint, UniqueConstraint, Table,$/;"	i
+UpperCaseString	mixins.py	/^class UpperCaseString(types.TypeDecorator):$/;"	c
+ViewName	mixins.py	/^	def ViewName(self):$/;"	m	class:PersonMixin
+WebMixin	mixins.py	/^class WebMixin(object):$/;"	c
 _DummyInflectEngine	codegen.py	/^class _DummyInflectEngine(object):$/;"	c
 __init__	codegen.py	/^    def __init__(self, metadata, noindexes=False, noconstraints=False,$/;"	m	class:CodeGenerator
 __init__	codegen.py	/^    def __init__(self, source_cls, target_cls):$/;"	m	class:Relationship
@@ -38,9 +69,16 @@ __init__	codegen.py	/^    def __init__(self, source_cls, target_cls, assocation_
 __init__	codegen.py	/^    def __init__(self, source_cls, target_cls, constraint, inflect_engine):$/;"	m	class:ManyToOneRelationship
 __init__	codegen.py	/^    def __init__(self, table):$/;"	m	class:Model
 __init__	codegen.py	/^    def __init__(self, table, association_tables, inflect_engine, detect_joined):$/;"	m	class:ModelClass
+__repr__	mixins.py	/^	def __repr__(self):$/;"	m	class:ActivityMixin	file:
+__repr__	mixins.py	/^	def __repr__(self):$/;"	m	class:NameMixin	file:
+__repr__	mixins.py	/^	def __repr__(self):$/;"	m	class:PersonMixin	file:
+__repr__	mixins.py	/^	def __repr__(self):$/;"	m	class:PlaceMixin	file:
+__repr__	mixins.py	/^	def __repr__(self):$/;"	m	class:RefTypeMixin	file:
+__repr__	mixins.py	/^    def __repr__(self):$/;"	m	class:IMX	file:
 __visit_name__	dialects/postgresql.py	/^    __visit_name__ = 'LTREE'$/;"	v	class:LTREE
 __visit_name__	dialects/postgresql.py	/^    __visit_name__ = 'POINT'$/;"	v	class:POINT
 _add_attribute	codegen.py	/^    def _add_attribute(self, attrname, value):$/;"	m	class:ModelClass
+_age_today	mixins.py	/^	def _age_today(self):$/;"	m	class:PersonMixin
 _convert_to_valid_identifier	codegen.py	/^def _convert_to_valid_identifier(name):$/;"	f
 _flask_prepend	codegen.py	/^_flask_prepend = ' '$/;"	v
 _get_column_names	codegen.py	/^def _get_column_names(constraint):$/;"	f
@@ -60,54 +98,372 @@ _render_column	codegen.py	/^def _render_column(column, show_name):$/;"	f
 _render_column_type	codegen.py	/^def _render_column_type(coltype):$/;"	f
 _render_constraint	codegen.py	/^def _render_constraint(constraint):$/;"	f
 _render_index	codegen.py	/^def _render_index(index):$/;"	f
+_salt	mixins.py	/^	_salt = Column(String(12))$/;"	v	class:WebMixin
 _tablename_to_classname	codegen.py	/^    def _tablename_to_classname(tablename, inflect_engine):$/;"	m	class:ModelClass
 _underscore	codegen.py	/^def _underscore(name):$/;"	f
+_user_link	mixins.py	/^	def _user_link(self, user):$/;"	m	class:AuditMixinNullable
 absolute_import	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
 absolute_import	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+act_List_columns	mixins.py	/^act_List_columns = ['action', 'deadline', 'budget', 'spend_td']$/;"	v
+action	mixins.py	/^	action = Column(String(40))$/;"	v	class:ActivityMixin
+activity_description	mixins.py	/^	activity_description = Column(Text)$/;"	v	class:ActivityMixin
+activity_fieldset	mixins.py	/^activity_fieldset = [$/;"	v
+actual_end	mixins.py	/^	actual_end = Column(DateTime, nullable=True, default=func.now())$/;"	v	class:ActivityMixin
+actual_start	mixins.py	/^	actual_start = Column(Date, default=func.now())$/;"	v	class:ActivityMixin
 add_import	codegen.py	/^    def add_import(self, obj):$/;"	m	class:ImportCollector
 add_imports	codegen.py	/^    def add_imports(self, collector):$/;"	m	class:Model
 add_imports	codegen.py	/^    def add_imports(self, collector):$/;"	m	class:ModelClass
 add_imports	codegen.py	/^    def add_imports(self, collector):$/;"	m	class:ModelTable
 add_literal_import	codegen.py	/^    def add_literal_import(self, pkgname, name):$/;"	m	class:ImportCollector
+address_line_1	mixins.py	/^	address_line_1 = Column(String(200))$/;"	v	class:ContactMixin
+address_line_2	mixins.py	/^	address_line_2 = Column(String(200))$/;"	v	class:ContactMixin
+age	mixins.py	/^	def age(self):$/;"	m	class:PersonMixin
+age_today	mixins.py	/^	age_today = Column(Integer)$/;"	v	class:PersonMixin
+allergies	mixins.py	/^	allergies = Column(Text)$/;"	v	class:PersonMedicalMixin
+alt	mixins.py	/^	alt = Column(Float)$/;"	v	class:PlaceMixin
+apparent_encoding	mixins.py	/^	apparent_encoding = Column(String(15))$/;"	v	class:WebMixin
 argparse	main.py	/^import argparse$/;"	i
+article_count	mixins.py	/^	article_count = Column(Integer)$/;"	v	class:WebMixin
+asset	mixins.py	/^	asset = Column(ImageColumn(thumbnail_size=(30, 30, True), size=(300, 300, True)))$/;"	v	class:WebMixin
+audio_channels	mixins.py	/^	audio_channels = Column(Integer)$/;"	v	class:DocMixin
+audio_duration_secs	mixins.py	/^	audio_duration_secs = Column(Integer)$/;"	v	class:DocMixin
+audio_frame_rate	mixins.py	/^	audio_frame_rate = Column(Integer)$/;"	v	class:DocMixin
+audio_show_fieldset	mixins.py	/^audio_show_fieldset = [$/;"	v
+audit_exclude_columns	mixins.py	/^audit_exclude_columns = ['created_by', 'created_on', 'changed_by', 'changed_on']$/;"	v
+author	mixins.py	/^	author = Column(String(100))$/;"	v	class:DocMixin
+author	mixins.py	/^	author = Column(String(500))$/;"	v	class:WebMixin
+b64encode	mixins.py	/^from base64 import b64encode$/;"	i
+balance_avail	mixins.py	/^	balance_avail = Column(Numeric(10,2), default=0.00)$/;"	v	class:ActivityMixin
+bc_id	mixins.py	/^	bc_id = Column(String(20), index=True, nullable=True)$/;"	v	class:PersonDocMixin
+bc_number	mixins.py	/^	bc_number = Column(String(20), index=True)$/;"	v	class:PersonDocMixin
+bc_place	mixins.py	/^	bc_place = Column(String(20), index=True)$/;"	v	class:PersonDocMixin
+bc_scan	mixins.py	/^	bc_scan = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:PersonDocMixin
+bc_serial	mixins.py	/^	bc_serial = Column(String(20), index=True)$/;"	v	class:PersonDocMixin
+biometric_columns	mixins.py	/^biometric_columns = ['fp_lthumb', 'fp_left2', 'fp_left3', 'fp_left4', 'fp_left5',$/;"	v
+biometric_fieldset	mixins.py	/^biometric_fieldset = [$/;"	v
+blood_group	mixins.py	/^	blood_group = Column(String(3))$/;"	v	class:BiometricMixin
+budget	mixins.py	/^	budget = Column(Numeric(10,2), default=0.00)$/;"	v	class:ActivityMixin
+calendar	mixins.py	/^import calendar$/;"	i
+canonical_link	mixins.py	/^	canonical_link = Column(String(1000))$/;"	v	class:WebMixin
+case_activity	mixins.py	/^case_activity = [$/;"	v
+case_fieldset	mixins.py	/^case_fieldset = [$/;"	v
+casey_fieldset	mixins.py	/^casey_fieldset = [$/;"	v
+category_count	mixins.py	/^	category_count = Column(Integer)$/;"	v	class:WebMixin
+centered	mixins.py	/^	centered = Column(Boolean)$/;"	v	class:PlaceMixin
+changed_by_	mixins.py	/^	def changed_by_(self):$/;"	m	class:AuditMixinNullable
+changed_by_fk	mixins.py	/^	def changed_by_fk(cls):  # noqa$/;"	m	class:AuditMixinNullable
+changed_on	mixins.py	/^	changed_on = Column($/;"	v	class:AuditMixinNullable
+changed_on_	mixins.py	/^	def changed_on_(self):$/;"	m	class:AuditMixinNullable
+char_count	mixins.py	/^	char_count = Column(Integer)$/;"	v	class:DocMixin
+chronic_conditions	mixins.py	/^	chronic_conditions = Column(Text)$/;"	v	class:PersonMedicalMixin
+chronic_medications	mixins.py	/^	chronic_medications = Column(Text)$/;"	v	class:PersonMedicalMixin
+citizenship	mixins.py	/^	citizenship = Column(String(20), default='Kenyan')$/;"	v	class:PersonDocMixin
+code	mixins.py	/^	code = Column(String(20), default='0000')$/;"	v	class:RefTypeMixin
 codecs	main.py	/^import codecs$/;"	i
+comments	mixins.py	/^	comments = Column(Text)$/;"	v	class:DocMixin
+completed	mixins.py	/^	completed = Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+complexion	mixins.py	/^	complexion = Column(String(50))$/;"	v	class:BiometricMixin
+contact_columns	mixins.py	/^contact_columns = ['mobile', 'fixed_line', 'email'] #, 'town'$/;"	v
+contact_fieldset	mixins.py	/^contact_fieldset = [$/;"	v
+content_hash	mixins.py	/^	content_hash = Column(String(128))  # We dont want the same content over and over$/;"	v	class:WebMixin
+contingency_plan	mixins.py	/^	contingency_plan = Column(Text)$/;"	v	class:ActivityMixin
+country	mixins.py	/^	country = Column(String(50), default='Ghana')$/;"	v	class:ContactMixin
 create_engine	main.py	/^from sqlalchemy.engine import create_engine$/;"	i
+created_by_fk	mixins.py	/^	def created_by_fk(cls):  # noqa$/;"	m	class:AuditMixinNullable
+created_on	mixins.py	/^	created_on = Column(DateTime, default=func.now(), nullable=True)$/;"	v	class:AuditMixinNullable
+creator	mixins.py	/^	def creator(self):  # noqa$/;"	m	class:AuditMixinNullable
+current_health_status	mixins.py	/^	current_health_status = Column(Text)$/;"	v	class:PersonMedicalMixin
+date	mixins.py	/^from datetime import MINYEAR, date, datetime, timedelta$/;"	i
+datetime	mixins.py	/^from datetime import MINYEAR, date, datetime, timedelta$/;"	i
+deadline	mixins.py	/^	deadline = Column(Date, default=func.now())$/;"	v	class:ActivityMixin
+declared_attr	mixins.py	/^from sqlalchemy.ext.declarative import declared_attr$/;"	i
 defaultdict	codegen.py	/^from collections import defaultdict$/;"	i
+delayed	mixins.py	/^	def delayed(self):$/;"	m	class:ActivityMixin
+description	mixins.py	/^	description = Column(String(100))$/;"	v	class:NameMixin
+description	mixins.py	/^	description = Column(String(100))$/;"	v	class:RefTypeMixin
+description	mixins.py	/^	description = Column(String(200))$/;"	v	class:WebMixin
+deviation_expected	mixins.py	/^	deviation_expected = Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+diabetes	mixins.py	/^	diabetes = Column(Boolean)$/;"	v	class:PersonMedicalMixin
 dialects	main.py	/^import sqlacodegen.dialects$/;"	i
 division	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
 division	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+dob	mixins.py	/^    dob = Column(Date, default=func.now())$/;"	v	class:PersonMixin
+dob_month_year	mixins.py	/^	def dob_month_year(self):$/;"	m	class:PersonMixin
+doc	mixins.py	/^	doc = Column(ImageColumn(thumbnail_size=(30, 30, True), size=(300, 300, True)))$/;"	v	class:DocMixin
+doc_binary	mixins.py	/^	doc_binary = Column(FileColumn)$/;"	v	class:DocMixin
+doc_columns	mixins.py	/^doc_columns = ['doc_title','subject','author','doc_type']$/;"	v
+doc_edit_fieldset	mixins.py	/^doc_edit_fieldset = [$/;"	v
+doc_exclude_columns	mixins.py	/^doc_exclude_columns = ['photo_img','photo_img_thumbnail','print_button','play_audio','doc','doc_binary']$/;"	v
+doc_show_fieldset	mixins.py	/^doc_show_fieldset = [$/;"	v
+doc_text	mixins.py	/^	doc_text = Column(Text)$/;"	v	class:DocMixin
+doc_text_observer	mixins.py	/^	def doc_text_observer(self, doc_text):$/;"	m	class:DocMixin
+doc_title	mixins.py	/^	doc_title = Column(String(200))$/;"	v	class:DocMixin
+doc_type	mixins.py	/^	doc_type = Column(String(5), default='pdf')$/;"	v	class:DocMixin
+domain	mixins.py	/^	domain = Column(String(300))$/;"	v	class:WebMixin
+download_date	mixins.py	/^	download_date = Column(DateTime, default=func.now())$/;"	v	class:WebMixin
+early_end	mixins.py	/^	early_end = Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+early_start	mixins.py	/^	early_start = Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+edit_date	mixins.py	/^	edit_date = Column(DateTime, default=func.now())$/;"	v	class:WebMixin
+email	mixins.py	/^	email = Column(String(60))$/;"	v	class:ContactMixin
+employ_date	mixins.py	/^	employ_date = Column(Date)$/;"	v	class:EmploymentMixin
+employ_duration	mixins.py	/^	employ_duration = Column(Integer)$/;"	v	class:EmploymentMixin
+employ_role	mixins.py	/^	employ_role = Column(String(50))$/;"	v	class:EmploymentMixin
+employed	mixins.py	/^	employed = Column(Boolean)$/;"	v	class:EmploymentMixin
+employer	mixins.py	/^	employer = Column(String(60))$/;"	v	class:EmploymentMixin
+employer_contact	mixins.py	/^	employer_contact = Column(Text)$/;"	v	class:EmploymentMixin
+employment_fieldset	mixins.py	/^employment_fieldset = [$/;"	v
+end_delay	mixins.py	/^	end_delay = Column(Interval)$/;"	v	class:ActivityMixin
+end_delay_observer	mixins.py	/^	def end_delay_observer(self, actual_end, planned_end):$/;"	m	class:ActivityMixin
+end_notes	mixins.py	/^	end_notes = Column(String(100))$/;"	v	class:ActivityMixin
+escape	mixins.py	/^from flask import Markup, escape, url_for$/;"	i
+ethnicity	mixins.py	/^	ethnicity = Column(String(40))$/;"	v	class:BiometricMixin
+eye_colour	mixins.py	/^	eye_colour = Column(String(20))$/;"	v	class:BiometricMixin
+eye_left	mixins.py	/^	eye_left = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+eye_right	mixins.py	/^	eye_right = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+f_education	mixins.py	/^	f_education = Column(String(40))$/;"	v	class:ParentageMixin
+f_firstname	mixins.py	/^	f_firstname = Column(String(40), nullable=True)$/;"	v	class:ParentageMixin
+f_income	mixins.py	/^	f_income = Column(String(50))$/;"	v	class:ParentageMixin
+f_nat_id_num	mixins.py	/^	f_nat_id_num = Column(String(15), index=True)$/;"	v	class:ParentageMixin
+f_occupation	mixins.py	/^	f_occupation = Column(String(40))$/;"	v	class:ParentageMixin
+f_othernames	mixins.py	/^	f_othernames = Column(String(100))$/;"	v	class:ParentageMixin
+f_prn	mixins.py	/^	f_prn = Column(String(6), index=True)$/;"	v	class:ParentageMixin
+f_surname	mixins.py	/^	f_surname = Column(String(40), nullable=True)$/;"	v	class:ParentageMixin
+facebook	mixins.py	/^	facebook = Column(String(40))$/;"	v	class:ContactMixin
+fax	mixins.py	/^	fax = Column(String(30))$/;"	v	class:ContactMixin
+file_size_bytes	mixins.py	/^	file_size_bytes = Column(Integer)$/;"	v	class:DocMixin
+firstname	mixins.py	/^	firstname = Column(String(40), nullable=False, index=True)$/;"	v	class:PersonMixin
+fixed_line	mixins.py	/^	fixed_line = Column(String(30))$/;"	v	class:ContactMixin
 footer	codegen.py	/^    footer = ''$/;"	v	class:CodeGenerator
+for_review	mixins.py	/^	for_review = Column(Boolean, default=False)$/;"	v	class:WebMixin
+fp_left2	mixins.py	/^	fp_left2 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_left3	mixins.py	/^	fp_left3 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_left4	mixins.py	/^	fp_left4 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_left5	mixins.py	/^	fp_left5 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_lthumb	mixins.py	/^	fp_lthumb = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_right2	mixins.py	/^	fp_right2 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_right3	mixins.py	/^	fp_right3 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_right4	mixins.py	/^	fp_right4 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_right5	mixins.py	/^	fp_right5 = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+fp_rthumb	mixins.py	/^	fp_rthumb = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+full_contact_fieldset	mixins.py	/^full_contact_fieldset = [$/;"	v
+full_person_fieldset	mixins.py	/^full_person_fieldset = person_fieldset + person_docs_fieldset + medical_fieldset + person_biometric_fieldset$/;"	v
+full_url	mixins.py	/^	full_url = Column(String(1000))$/;"	v	class:WebMixin
+func	mixins.py	/^from sqlalchemy.sql import func$/;"	i
+gcode	mixins.py	/^	gcode = Column(String(40))$/;"	v	class:ContactMixin
+gender	mixins.py	/^    gender = Column(Enum('Male', 'Female', 'Other' name='gender_type'))$/;"	v	class:PersonMixin
 geoalchemy2	dialects/postgresql.py	/^    import geoalchemy2$/;"	i
+goal	mixins.py	/^	goal = Column(Text)$/;"	v	class:ActivityMixin
+hair_colour	mixins.py	/^	hair_colour = Column(String(20))$/;"	v	class:BiometricMixin
+has_risk_words	mixins.py	/^	has_risk_words = Column(Boolean)$/;"	v	class:WebMixin
+hashlib	mixins.py	/^import humanize, hashlib$/;"	i
+hashx	mixins.py	/^	hashx = Column(String(40))$/;"	v	class:DocMixin
+hbp	mixins.py	/^	hbp = Column(Boolean)$/;"	v	class:PersonMedicalMixin
+height_m	mixins.py	/^	height_m = Column(Float, nullable=True)$/;"	v	class:BiometricMixin
+hiv	mixins.py	/^	hiv = Column(Boolean)$/;"	v	class:PersonMedicalMixin
+html	mixins.py	/^	html = Column(Text)$/;"	v	class:WebMixin
+humanize	mixins.py	/^import humanize, hashlib$/;"	i
+hybrid_property	mixins.py	/^from sqlalchemy.ext.hybrid import hybrid_property$/;"	i
+icons	mixins.py	/^	def icons(self):$/;"	m	class:AuditMixinNullable
+id	mixins.py	/^	id = Column(Integer, autoincrement=True, primary_key=True)$/;"	v	class:PersonMixin
+id	mixins.py	/^    id = Column(Integer, primary_key=True)$/;"	v	class:IMX
+immutable	mixins.py	/^	immutable = Column(Boolean, default = False)$/;"	v	class:DocMixin
+impl	mixins.py	/^    impl = types.String$/;"	v	class:LowerCaseString
+impl	mixins.py	/^    impl = types.String$/;"	v	class:TitleCaseString
+impl	mixins.py	/^    impl = types.String$/;"	v	class:UpperCaseString
 import_dialect_specificities	main.py	/^def import_dialect_specificities(engine):$/;"	f
 importlib	main.py	/^import importlib$/;"	i
 inflect	codegen.py	/^            import inflect$/;"	i
 inflect	codegen.py	/^        import inflect$/;"	i
+info	mixins.py	/^	info = Column(Text, default='')$/;"	v	class:PlaceMixin
 inspect	codegen.py	/^import inspect$/;"	i
+instagram	mixins.py	/^	instagram = Column(String(40))$/;"	v	class:ContactMixin
+investigation_fieldset	mixins.py	/^investigation_fieldset = [$/;"	v
+is_downloaded	mixins.py	/^	is_downloaded = Column(Boolean, default=False)$/;"	v	class:WebMixin
+is_feed	mixins.py	/^	is_feed = Column(Boolean, default=False)$/;"	v	class:WebMixin
+is_image	mixins.py	/^	is_image = Column(Boolean, default=False)$/;"	v	class:WebMixin
+is_negative	mixins.py	/^	is_negative = Column(Boolean, default=False)$/;"	v	class:WebMixin
+is_neutral	mixins.py	/^	is_neutral = Column(Boolean, default=True)$/;"	v	class:WebMixin
+is_positive	mixins.py	/^	is_positive = Column(Boolean, default=False)$/;"	v	class:WebMixin
+is_text	mixins.py	/^	is_text = Column(Boolean, default=False)$/;"	v	class:WebMixin
+is_video	mixins.py	/^	is_video = Column(Boolean, default=False)$/;"	v	class:WebMixin
 ischema_names	dialects/postgresql.py	/^from sqlalchemy.dialects.postgresql.base import ischema_names, PGTypeCompiler$/;"	i
 iskeyword	codegen.py	/^from keyword import iskeyword$/;"	i
+iterations	mixins.py	/^	iterations = Column(Integer, default=0)$/;"	v	class:WebMixin
+keywords	mixins.py	/^	keywords = Column(String(200))$/;"	v	class:DocMixin
+kin1_addr	mixins.py	/^	kin1_addr = Column(Text)$/;"	v	class:PersonDocMixin
+kin1_email	mixins.py	/^	kin1_email = Column(String(125))$/;"	v	class:PersonDocMixin
+kin1_name	mixins.py	/^	kin1_name = Column(String(100))$/;"	v	class:PersonDocMixin
+kin1_phone	mixins.py	/^	kin1_phone = Column(String(50))$/;"	v	class:PersonDocMixin
+kin1_relation	mixins.py	/^	kin1_relation = Column(String(100))$/;"	v	class:PersonDocMixin
+kin2_addr	mixins.py	/^	kin2_addr = Column(Text)$/;"	v	class:PersonDocMixin
+kin2_email	mixins.py	/^	kin2_email = Column(String(125))$/;"	v	class:PersonDocMixin
+kin2_name	mixins.py	/^	kin2_name = Column(String(100))$/;"	v	class:PersonDocMixin
+kin2_phone	mixins.py	/^	kin2_phone = Column(String(50))$/;"	v	class:PersonDocMixin
+lang	mixins.py	/^	lang = Column(String(20))$/;"	v	class:WebMixin
+lasted	mixins.py	/^	def lasted(self):$/;"	m	class:ActivityMixin
+lat	mixins.py	/^	lat = Column(Float)$/;"	v	class:PlaceMixin
+late_end	mixins.py	/^	late_end =  Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+late_start	mixins.py	/^	late_start =  Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+lines	mixins.py	/^	lines = Column(Integer)$/;"	v	class:DocMixin
+link_count	mixins.py	/^	link_count = Column(Integer)  # Number of links on the page$/;"	v	class:WebMixin
+link_hash	mixins.py	/^	link_hash = Column(String(128))  # So that we never re-crawl the link$/;"	v	class:WebMixin
+lng	mixins.py	/^	lng = Column(Float)$/;"	v	class:PlaceMixin
+m_education	mixins.py	/^	m_education = Column(String(40))$/;"	v	class:ParentageMixin
+m_firstname	mixins.py	/^	m_firstname = Column(String(40), nullable=True)$/;"	v	class:ParentageMixin
+m_income	mixins.py	/^	m_income = Column(String(50))$/;"	v	class:ParentageMixin
+m_nat_id_num	mixins.py	/^	m_nat_id_num = Column(String(15), index=True)$/;"	v	class:ParentageMixin
+m_occupation	mixins.py	/^	m_occupation = Column(String(40))$/;"	v	class:ParentageMixin
+m_othernames	mixins.py	/^	m_othernames = Column(String(100))$/;"	v	class:ParentageMixin
+m_prn	mixins.py	/^	m_prn = Column(String(6), index=True)$/;"	v	class:ParentageMixin
+m_surname	mixins.py	/^	m_surname = Column(String(40), nullable=True)$/;"	v	class:ParentageMixin
 main	main.py	/^def main():$/;"	f
 make_backref	codegen.py	/^    def make_backref(self, relationships, classes):$/;"	m	class:Relationship
+make_searchable	mixins.py	/^from sqlalchemy_searchable import make_searchable$/;"	i
+make_versioned	mixins.py	/^from sqlalchemy_continuum import make_versioned$/;"	i
+map	mixins.py	/^	map = Column(Text, default='')$/;"	v	class:PlaceMixin
+marital_status	mixins.py	/^	marital_status = Column(Enum('Single', 'Married', 'Divorced', 'Widowed', 'Other', name='marital_status_type'))$/;"	v	class:PersonMixin
+medical_fieldset	mixins.py	/^medical_fieldset = [$/;"	v
+mime_type	mixins.py	/^	mime_type = Column(String(60), default='application\/pdf')$/;"	v	class:DocMixin
+mindate	mixins.py	/^mindate = date(MINYEAR, 1, 1)$/;"	v
+mobile	mixins.py	/^	mobile = Column(String(30), index=True)$/;"	v	class:ContactMixin
+modified	mixins.py	/^	def modified(self):$/;"	m	class:AuditMixinNullable
+month_year	mixins.py	/^	def month_year(self):$/;"	m	class:PersonMixin
+name	mixins.py	/^	name = Column(String(100))$/;"	v	class:NameMixin
+name	mixins.py	/^	name = Column(String(100), unique=True, nullable=False, index=True)$/;"	v	class:RefTypeMixin
+nat_id_num	mixins.py	/^	nat_id_num = Column(String(15), index=True)$/;"	v	class:PersonDocMixin
+nat_id_scan	mixins.py	/^	nat_id_scan = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:PersonDocMixin
+nat_id_serial	mixins.py	/^	nat_id_serial = Column(String(30), index=True)$/;"	v	class:PersonDocMixin
+nearest_feature	mixins.py	/^	nearest_feature = Column(String(100))$/;"	v	class:PlaceMixin
+not_started	mixins.py	/^	not_started = Column(Boolean, default=True)$/;"	v	class:ActivityMixin
+notes	mixins.py	/^	notes = Column(Text, default='')$/;"	v	class:NameMixin
+notes	mixins.py	/^	notes = Column(Text, default='')$/;"	v	class:RefTypeMixin
+noun_count	mixins.py	/^	noun_count = Column(Integer)$/;"	v	class:WebMixin
+nouns	mixins.py	/^	nouns = Column(Text)$/;"	v	class:WebMixin
+nullable	mixins.py	/^				 nullable=False)  # Use this to load the list of urls, we process url to get the other things$/;"	v	class:WebMixin
+observes	mixins.py	/^from sqlalchemy_utils import observes$/;"	i
+of_interest	mixins.py	/^	of_interest = Column(Boolean, default=False)$/;"	v	class:WebMixin
+okhi	mixins.py	/^	okhi = Column(String(40))$/;"	v	class:ContactMixin
+onupdate	mixins.py	/^			onupdate=func.now(), nullable=True)$/;"	v	class:AuditMixinNullable
+os	mixins.py	/^import os$/;"	i
+other_email	mixins.py	/^	other_email = Column(String(60))$/;"	v	class:ContactMixin
+other_fixed_line	mixins.py	/^	other_fixed_line = Column(String(20))$/;"	v	class:ContactMixin
+other_mobile	mixins.py	/^	other_mobile = Column(String(30))$/;"	v	class:ContactMixin
+other_whatsapp	mixins.py	/^	other_whatsapp = Column(Boolean)$/;"	v	class:ContactMixin
+othernames	mixins.py	/^	othernames = Column(String(40), nullable=True, index=True)$/;"	v	class:PersonMixin
+over_budget	mixins.py	/^	over_budget = Column(Boolean, default=False)$/;"	v	class:ActivityMixin
+page_count	mixins.py	/^	page_count = Column(Integer)$/;"	v	class:DocMixin
+page_size	mixins.py	/^	page_size = Column(String(40))$/;"	v	class:DocMixin
+palm_left	mixins.py	/^	palm_left = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+palm_right	mixins.py	/^	palm_right = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:BiometricMixin
+paragraphs	mixins.py	/^	paragraphs = Column(Integer)$/;"	v	class:DocMixin
 parent_name	codegen.py	/^    parent_name = 'Base'$/;"	v	class:ModelClass
+parentage_fieldset	mixins.py	/^parentage_fieldset = [$/;"	v
+person_biometric_fieldset	mixins.py	/^person_biometric_fieldset = [$/;"	v
+person_docs_fieldset	mixins.py	/^person_docs_fieldset = [$/;"	v
+person_exclude_columns	mixins.py	/^person_exclude_columns = ['photo', 'bc_scan', 'nat_id_scan', 'pp_scan','start_delay','end_delay','wsq','pgm','xyt']$/;"	v
+person_fieldset	mixins.py	/^person_fieldset = [$/;"	v
+person_list_columns	mixins.py	/^person_list_columns = ['firstname', 'surname', 'gender1','dob'] #'_age_today'$/;"	v
+person_search_exclude_columns	mixins.py	/^person_search_exclude_columns = ['photo','photo_img','photo_img_thumbnail','fp_l1', 'fp_l2', 'fp_l3', 'fp_l4', 'fp_l5', 'fp_r1', 'fp_r2', 'fp_r3', 'fp_r4',$/;"	v
+person_show_fieldset	mixins.py	/^person_show_fieldset = [$/;"	v
+pgm	mixins.py	/^	pgm = Column(BYTEA)$/;"	v	class:BiometricMixin
+photo	mixins.py	/^	photo = Column(ImageColumn(thumbnail_size=(30, 30, True), size=(300, 300, True)))$/;"	v	class:PersonMixin
+pin	mixins.py	/^	pin = Column(Boolean)  # Do we put a pin$/;"	v	class:PlaceMixin
+pin_color	mixins.py	/^	pin_color = Column(String(20))$/;"	v	class:PlaceMixin
+pin_icon	mixins.py	/^	pin_icon = Column(String(50))$/;"	v	class:PlaceMixin
+place_fieldset	mixins.py	/^place_fieldset = [$/;"	v
+place_name	mixins.py	/^	place_name = Column(String(40))$/;"	v	class:PlaceMixin
+planned_end	mixins.py	/^	planned_end = Column(Date, default=func.now())$/;"	v	class:ActivityMixin
+planned_start	mixins.py	/^	planned_start = Column(Date, default=func.now())$/;"	v	class:ActivityMixin
 plural_noun	codegen.py	/^    def plural_noun(self, noun):  # needed for backrefs$/;"	m	class:_DummyInflectEngine
+pp_expiry_date	mixins.py	/^	pp_expiry_date = Column(Date)$/;"	v	class:PersonDocMixin
+pp_issue_date	mixins.py	/^	pp_issue_date = Column(Date)$/;"	v	class:PersonDocMixin
+pp_issue_place	mixins.py	/^	pp_issue_place = Column(String(40))$/;"	v	class:PersonDocMixin
+pp_no	mixins.py	/^	pp_no = Column(String(20), index=True)$/;"	v	class:PersonDocMixin
+pp_scan	mixins.py	/^	pp_scan = Column(ImageColumn(thumbnail_size=(30, 60, True), size=(300, 600, True)))$/;"	v	class:PersonDocMixin
 print_function	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
 print_function	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+priority	mixins.py	/^	priority = Column(Integer, default=5)$/;"	v	class:ActivityMixin
+prn	mixins.py	/^	def prn(self, cls):$/;"	m	class:PRNMixin
+prn_id	mixins.py	/^	def prn_id(cls):$/;"	m	class:PRNMixin
+process_bind_param	mixins.py	/^    def process_bind_param(self, value, dialect):$/;"	m	class:LowerCaseString
+process_bind_param	mixins.py	/^    def process_bind_param(self, value, dialect):$/;"	m	class:TitleCaseString
+process_bind_param	mixins.py	/^    def process_bind_param(self, value, dialect):$/;"	m	class:UpperCaseString
+producer_prog	mixins.py	/^	producer_prog = Column(String(40))$/;"	v	class:DocMixin
+publish_date	mixins.py	/^	publish_date = Column(DateTime)$/;"	v	class:WebMixin
+query_class	mixins.py	/^	query_class = DocQuery$/;"	v	class:DocMixin
 random	codegen.py	/^import re, random$/;"	i
+ranking	mixins.py	/^	ranking = Column(Integer, CheckConstraint('(ranking >= 0) and (ranking <=10)'))$/;"	v	class:WebMixin
 re	codegen.py	/^import re, random$/;"	i
+ref_columns	mixins.py	/^ref_columns = ['name', 'description']$/;"	v
+ref_fieldset	mixins.py	/^ref_fieldset = [$/;"	v
+relationship	mixins.py	/^from sqlalchemy.orm import relationship$/;"	i
+religion	mixins.py	/^	religion = Column(String(20))$/;"	v	class:BiometricMixin
 render	codegen.py	/^    def render(self):$/;"	m	class:ImportCollector
 render	codegen.py	/^    def render(self):$/;"	m	class:ModelClass
 render	codegen.py	/^    def render(self):$/;"	m	class:ModelTable
 render	codegen.py	/^    def render(self):$/;"	m	class:Relationship
 render	codegen.py	/^    def render(self, outfile=sys.stdout):$/;"	m	class:CodeGenerator
 render_fk_options	codegen.py	/^    def render_fk_options(*opts):$/;"	f	function:_render_constraint
+renders	mixins.py	/^from flask_appbuilder.models.decorators import renders$/;"	i
+salt	mixins.py	/^	def salt(self):$/;"	m	class:WebMixin
+scheme	mixins.py	/^	scheme = Column(String(10), default='http', nullable=False)$/;"	v	class:WebMixin
+search_vector	mixins.py	/^	search_vector = Column(TSVectorType('doc_text','doc_title'))$/;"	v	class:DocMixin
+segment	mixins.py	/^	segment = Column(Integer)$/;"	v	class:ActivityMixin
+sentiment	mixins.py	/^	sentiment = Column(String(100))$/;"	v	class:WebMixin
+sentiment_colour	mixins.py	/^	sentiment_colour = Column(String(50))$/;"	v	class:WebMixin
+sequence	mixins.py	/^	sequence = Column(Integer)$/;"	v	class:ActivityMixin
+sha256	mixins.py	/^from hashlib import sha256$/;"	i
 singular_noun	codegen.py	/^    def singular_noun(self, noun):$/;"	m	class:_DummyInflectEngine
+spend_td	mixins.py	/^	spend_td = Column(Numeric(10,2), default=0.00)$/;"	v	class:ActivityMixin
 sqlacodegen	main.py	/^import sqlacodegen$/;"	i
 sqlacodegen	main.py	/^import sqlacodegen.dialects$/;"	i
 sqlalchemy	codegen.py	/^import sqlalchemy$/;"	i
+sqlalchemy	mixins.py	/^import sqlalchemy.types as types$/;"	i
 sqltypes	dialects/postgresql.py	/^from sqlalchemy import types as sqltypes$/;"	i
+start_delay	mixins.py	/^	start_delay = Column(Interval)$/;"	v	class:ActivityMixin
+start_delay_observer	mixins.py	/^	def start_delay_observer(self, actual_start, planned_start):$/;"	m	class:ActivityMixin
+start_notes	mixins.py	/^	start_notes = Column(String(100))$/;"	v	class:ActivityMixin
+started	mixins.py	/^	def started(self):$/;"	m	class:ActivityMixin
+status	mixins.py	/^	status = Column(String(40))$/;"	v	class:ActivityMixin
+striking_features	mixins.py	/^	striking_features = Column(Text)$/;"	v	class:BiometricMixin
+subject	mixins.py	/^	subject = Column(String(100))$/;"	v	class:DocMixin
+summary	mixins.py	/^	summary = Column(Text, default='')$/;"	v	class:WebMixin
+supervisor	mixins.py	/^	supervisor = Column(String(50))$/;"	v	class:EmploymentMixin
+supervisor_contact	mixins.py	/^	supervisor_contact = Column(Text)$/;"	v	class:EmploymentMixin
+surname	mixins.py	/^	surname = Column(String(40), nullable=False, index=True)$/;"	v	class:PersonMixin
 sys	codegen.py	/^import sys$/;"	i
 sys	main.py	/^import sys$/;"	i
+tags	mixins.py	/^	tags = Column(String(500))$/;"	v	class:WebMixin
+task_group	mixins.py	/^	task_group = Column(Integer)$/;"	v	class:ActivityMixin
+termination_date	mixins.py	/^	termination_date = Column(Date)$/;"	v	class:EmploymentMixin
 text	codegen.py	/^    from sqlalchemy.sql.expression import text, TextClause$/;"	i
 text	codegen.py	/^    from sqlalchemy.sql.expression import text, _TextClause as TextClause$/;"	i
+timedelta	mixins.py	/^from datetime import MINYEAR, date, datetime, timedelta$/;"	i
+title	mixins.py	/^	title = Column(String(300))$/;"	v	class:WebMixin
+today	mixins.py	/^def today():$/;"	f
+town	mixins.py	/^	town = Column(String(40))$/;"	v	class:ContactMixin
+twitter	mixins.py	/^	twitter = Column(String(40))$/;"	v	class:ContactMixin
+txt	mixins.py	/^	txt = Column(Text)$/;"	v	class:WebMixin
+types	mixins.py	/^import sqlalchemy.types as types$/;"	i
+under_budget	mixins.py	/^	under_budget =Column(Boolean, default=False)$/;"	v	class:ActivityMixin
 unicode_literals	codegen.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
 unicode_literals	main.py	/^from __future__ import unicode_literals, division, print_function, absolute_import$/;"	i
+url	mixins.py	/^	url = Column(String(1000),$/;"	v	class:WebMixin
+url_for	mixins.py	/^from flask import Markup, escape, url_for$/;"	i
+validates	mixins.py	/^from sqlalchemy.orm import validates$/;"	i
+version	mixins.py	/^	version = Column(String(20))$/;"	v	class:WebMixin
 visit_bindparam	codegen.py	/^        def visit_bindparam(self, bindparam, within_columns_clause=False, literal_binds=False, **kwargs):$/;"	m	class:_get_compiled_expression.LiteralCompiler
+web_fieldset	mixins.py	/^web_fieldset = [$/;"	v
+web_fragment	mixins.py	/^	web_fragment = Column(String(1000))$/;"	v	class:WebMixin
+web_netloc	mixins.py	/^	web_netloc = Column(String(400))$/;"	v	class:WebMixin
+web_params	mixins.py	/^	web_params = Column(String(1000))$/;"	v	class:WebMixin
+web_path	mixins.py	/^	web_path = Column(String(1000))$/;"	v	class:WebMixin
+web_query	mixins.py	/^	web_query = Column(String(1000))$/;"	v	class:WebMixin
+weight_kg	mixins.py	/^	weight_kg = Column(Float, nullable=True)$/;"	v	class:BiometricMixin
+whatsapp	mixins.py	/^	whatsapp = Column(Boolean)$/;"	v	class:ContactMixin
+word_count	mixins.py	/^	word_count = Column(Integer)$/;"	v	class:DocMixin
+word_count	mixins.py	/^	word_count = Column(Integer)$/;"	v	class:WebMixin
+wsq	mixins.py	/^	wsq = Column(BYTEA)$/;"	v	class:BiometricMixin
+xyt	mixins.py	/^	xyt = Column(BYTEA)$/;"	v	class:BiometricMixin
+year	mixins.py	/^	def year(self):$/;"	m	class:PersonMixin
+zipcode	mixins.py	/^	zipcode = Column(String(30))$/;"	v	class:ContactMixin
